@@ -29,27 +29,28 @@
                     <li><a href="https://github.com/DTSCode/articles/tarball/master" class="button">TAR</a></li>
                 </ul>
             </div>
-      </div><!-- end banner -->
+        </div>
+        <div class="wrapper">
+            <nav>
+            </nav>
+            <section>
+                <h4>Entry Points</h4><br />
+                <p>Despite the essential differences of all programming languages, they share at least one thing in common: an entry point. An entry point is exactly what it sounds like: an entry into the program where the code begins execution. Historically speaking, the entry point is a function (method, procedure, routine, etc) with the name (or some variation of) main. Incidentally, due to this convention the main source file for the project is traditionally called main. However, in certain cases (with languages like brainfuck or bash), the entry point can become a little non-standard. Instead execution starts at the very beginning of the source file. In cases where the entry point is a function, command line arguments are typically recieved there.</p>
+                <p>Examples:</p>
+                ```c++
+                #include <iostream>
 
-    <div class="wrapper">
-      <nav>
-      </nav>
-      <section>
-        <h4>Entry Points</h4><br />
-        <p>Despite the essential differences of all programming languages, they share at least one thing in common: an entry point. An entry point is exactly what it sounds like: an entry into the program where the code begins execution. Historically speaking, the entry point is a function (method, procedure, routine, etc) with the name (or some variation of) main. Incidentally, due to this convention the main source file for the project is traditionally called main. However, in certain cases (with languages like brainfuck or bash), the entry point can become a little non-standard. Instead execution starts at the very beginning of the source file. In cases where the entry point is a function, command line arguments are typically recieved there.</p>
-
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/DTSCode">DTSCode</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+                int main(int argc, char *argv[]) {
+                    std::cout << "Hello, world!" << std::endl;
+                    return 0;
+                }
+                ```
+            </section>
+            <footer>
+                <p>Project maintained by <a href="https://github.com/DTSCode">DTSCode</a></p>
+                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+            </footer>
+        </div>
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    </body>
 </html>
-
-<!--
-DannyToledo
-You could do something like an animation of a state diagram. For example: you could have one giant state that represents the OS and a state that represents your program with a transition from the OS to your program. You could then zoom in on your program to view different functions (again as states) depicting main as the starting state of that application. 
--->
